@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KPP Engine — Sudip Poudel</title>
+  <meta name="description" content="Time-Series Forecasting Platform — Fine-tuned Amazon Chronos-2 with LoRA adapters for multi-horizon probabilistic forecasts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../../" class="nav-logo">
+        <span class="bracket">[</span>sudip.poudel<span class="bracket">]</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../#about">About</a>
+        <a href="../../#skills">Skills</a>
+        <a href="../../#experience">Experience</a>
+        <a href="../../#projects" class="active">Projects</a>
+        <a href="../../#education">Education</a>
+        <a href="../../#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="../../#about">About</a>
+    <a href="../../#skills">Skills</a>
+    <a href="../../#experience">Experience</a>
+    <a href="../../#projects">Projects</a>
+    <a href="../../#education">Education</a>
+    <a href="../../#contact">Contact</a>
+  </div>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1" style="top: -80px; right: -60px;"></div>
+      <div class="hero-orb hero-orb-2" style="bottom: -40px; left: -60px; opacity: 0.3;"></div>
+    </div>
+
+    <div class="container">
+      <div class="project-hero-content">
+        <a href="../../#projects" class="project-hero-back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Projects
+        </a>
+
+        <div class="section-label">Time-Series Forecasting</div>
+        <h1 class="display-sm project-title">KPP Engine</h1>
+        <p class="project-subtitle">Multi-Horizon Probabilistic Forecasting Platform</p>
+
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <strong>2026</strong>
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <strong>Production</strong>
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+            <strong>Technimus LLC</strong>
+          </div>
+        </div>
+
+        <div class="tag-group" style="margin-bottom: 32px;">
+          <span class="badge badge-cyan">PyTorch</span>
+          <span class="badge badge-cyan">Chronos-2</span>
+          <span class="badge">LoRA / PEFT</span>
+          <span class="badge">HuggingFace</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Python</span>
+        </div>
+
+        <div class="project-hero-actions">
+          <a href="../../#contact" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Discuss This Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE DIAGRAM -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">System Design</div>
+      <h2 class="heading fade-up">Architecture Overview</h2>
+      <p class="text-muted fade-up stagger-1" style="margin-top: 12px; margin-bottom: 0; max-width: 600px;">
+        End-to-end pipeline from raw time-series data through Chronos-2 fine-tuning to a containerized inference API.
+      </p>
+
+      <div class="architecture-diagram fade-up stagger-2">
+        <div class="img-placeholder" style="aspect-ratio: 16/9;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span class="ph-label">System Architecture Diagram</span>
+          <span class="ph-dims">1920 × 1080</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="project-section">
+    <div class="container">
+      <div class="project-overview-grid">
+        <div>
+          <div class="section-label">Overview</div>
+          <h2 class="heading fade-up" style="margin-bottom: 28px;">What It Does</h2>
+
+          <div class="project-description fade-up stagger-1">
+            <p>
+              KPP Engine is a <strong>production time-series forecasting platform</strong> built to generate multi-horizon probabilistic (quantile) forecasts at scale. At its core is a fine-tuned instance of <strong>Amazon Chronos-2</strong>, a state-of-the-art zero-shot time-series foundation model, adapted to the target domain using <strong>LoRA adapters via PEFT</strong>.
+            </p>
+            <p>
+              The preprocessing and feature engineering pipeline is designed to be <strong>leak-free</strong> — all transformations that depend on statistics are computed strictly on the training window during walk-forward evaluation. This eliminates lookahead bias and produces honest, reproducible accuracy numbers.
+            </p>
+            <p>
+              The trained model is served through a <strong>FastAPI REST API</strong> that accepts raw time-series payloads and returns calibrated quantile forecasts across configurable horizons. The entire stack — training environment, data pipeline, and serving layer — is containerized with <strong>Docker</strong> for reproducible deployments on self-hosted infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-sidebar fade-up stagger-2">
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Core Stack</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">Amazon Chronos-2</div>
+              <div class="project-tech-item">LoRA / PEFT (HuggingFace)</div>
+              <div class="project-tech-item">PyTorch</div>
+              <div class="project-tech-item">FastAPI</div>
+              <div class="project-tech-item">Docker</div>
+              <div class="project-tech-item">Python</div>
+            </div>
+          </div>
+
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Forecast Type</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">Multi-horizon output</div>
+              <div class="project-tech-item">Probabilistic (quantile)</div>
+              <div class="project-tech-item">Walk-forward backtest</div>
+            </div>
+          </div>
+
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Serving</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">REST API via FastAPI</div>
+              <div class="project-tech-item">Docker containerized</div>
+              <div class="project-tech-item">Self-hosted (Coolify)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="heading fade-up">Key Components</h2>
+
+      <div class="features-grid">
+        <div class="feature-card fade-up stagger-1">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="feature-title">Chronos-2 Fine-Tuning</div>
+          <div class="feature-text">Parameter-efficient fine-tuning of Amazon's Chronos-2 foundation model using LoRA adapters, adapting the pretrained zero-shot forecaster to the target domain with minimal compute overhead.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-2">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 9l-5-5-4 4-3-3"/></svg>
+          </div>
+          <div class="feature-title">Probabilistic Quantile Forecasts</div>
+          <div class="feature-text">Outputs calibrated quantile predictions across multiple horizons rather than point estimates, providing meaningful uncertainty bounds for downstream decision-making.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-3">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="feature-title">Leak-Free Rolling Backtest</div>
+          <div class="feature-text">Walk-forward backtesting framework that recomputes all statistics within each training window, eliminating lookahead bias and producing evaluation metrics that accurately reflect live performance.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-4">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+          </div>
+          <div class="feature-title">Feature Pipeline</div>
+          <div class="feature-text">Preprocessing pipeline that handles missing values, temporal feature engineering, scaling, and lag construction — all designed to feed cleanly into the Chronos tokenizer format.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-1">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <div class="feature-title">FastAPI Inference Service</div>
+          <div class="feature-text">Clean REST API that accepts raw time-series payloads (JSON), runs preprocessing and model inference, and returns structured forecast responses with quantile bounds and horizon metadata.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-2">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div class="feature-title">Docker Containerization</div>
+          <div class="feature-text">Fully containerized training and serving environments with Docker, enabling reproducible builds and clean deployment on self-hosted infrastructure via Coolify.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">Visuals</div>
+      <h2 class="heading fade-up">Screenshots</h2>
+
+      <div class="screenshots-grid">
+        <div class="screenshot-item fade-up stagger-1">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span class="ph-label">Forecast Output — Quantile Bands</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Multi-horizon forecast with probabilistic quantile bands</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-2">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 9l-5-5-4 4-3-3"/></svg>
+            <span class="ph-label">Walk-Forward Backtest Results</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Backtesting evaluation across rolling windows</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-3">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h.01M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg>
+            <span class="ph-label">Training Loss Curves</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">LoRA fine-tuning loss across training steps</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-4">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span class="ph-label">FastAPI Docs — Swagger UI</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">REST API documentation via auto-generated Swagger</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <section class="project-section">
+    <div class="container" style="text-align: center;">
+      <div class="text-muted body-sm" style="margin-bottom: 16px;">Next Project</div>
+      <h3 class="subheading" style="margin-bottom: 20px;">AMVIS — Real-Time Conversational AI Platform</h3>
+      <a href="../amvis/" class="btn btn-outline">View AMVIS →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 <span>Sudip Poudel</span>. Built with care.</p>
+        <div class="footer-links">
+          <a href="../../">Portfolio</a>
+          <a href="../../#projects">All Projects</a>
+          <a href="../../#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

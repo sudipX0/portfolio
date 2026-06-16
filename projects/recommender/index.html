@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Recommender — Sudip Poudel</title>
+  <meta name="description" content="Two-Stage University Recommender — TF-IDF and sentence-transformer retrieval with multi-signal re-ranking, benchmarked with Recall@K, MRR, and nDCG@K." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../../" class="nav-logo">
+        <span class="bracket">[</span>sudip.poudel<span class="bracket">]</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../#about">About</a>
+        <a href="../../#skills">Skills</a>
+        <a href="../../#experience">Experience</a>
+        <a href="../../#projects" class="active">Projects</a>
+        <a href="../../#education">Education</a>
+        <a href="../../#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="../../#about">About</a>
+    <a href="../../#skills">Skills</a>
+    <a href="../../#experience">Experience</a>
+    <a href="../../#projects">Projects</a>
+    <a href="../../#education">Education</a>
+    <a href="../../#contact">Contact</a>
+  </div>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1" style="top: -80px; right: -60px; background: radial-gradient(circle, rgba(251,191,36,0.08), transparent 70%);"></div>
+      <div class="hero-orb hero-orb-2" style="bottom: -40px; left: -60px; opacity: 0.3;"></div>
+    </div>
+
+    <div class="container">
+      <div class="project-hero-content">
+        <a href="../../#projects" class="project-hero-back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Projects
+        </a>
+
+        <div class="section-label">Information Retrieval</div>
+        <h1 class="display-sm project-title">University Recommender</h1>
+        <p class="project-subtitle">Two-Stage Retrieval &amp; Multi-Signal Re-Ranking System</p>
+
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <strong>2026</strong>
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <strong>Production</strong>
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+            <strong>Technimus LLC</strong>
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <strong>2-Stage Pipeline</strong>
+          </div>
+        </div>
+
+        <div class="tag-group" style="margin-bottom: 32px;">
+          <span class="badge badge-cyan">Sentence Transformers</span>
+          <span class="badge">TF-IDF</span>
+          <span class="badge">Scikit-learn</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">Python</span>
+          <span class="badge">Recall@K</span>
+          <span class="badge">nDCG@K</span>
+          <span class="badge">MRR</span>
+        </div>
+
+        <div class="project-hero-actions">
+          <a href="../../#contact" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Discuss This Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE DIAGRAM -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">System Design</div>
+      <h2 class="heading fade-up">Architecture Overview</h2>
+      <p class="text-muted fade-up stagger-1" style="margin-top: 12px; margin-bottom: 0; max-width: 640px;">
+        Two-stage retrieval pipeline: TF-IDF + sentence-transformer candidate retrieval followed by a transparent multi-signal re-ranking layer.
+      </p>
+
+      <div class="architecture-diagram fade-up stagger-2">
+        <div class="img-placeholder" style="aspect-ratio: 16/9;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span class="ph-label">Two-Stage Retrieval Architecture Diagram</span>
+          <span class="ph-dims">1920 × 1080</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="project-section">
+    <div class="container">
+      <div class="project-overview-grid">
+        <div>
+          <div class="section-label">Overview</div>
+          <h2 class="heading fade-up" style="margin-bottom: 28px;">What It Does</h2>
+
+          <div class="project-description fade-up stagger-1">
+            <p>
+              The University Recommender is a <strong>two-stage retrieval and re-ranking system</strong> that helps prospective students find relevant universities based on their profile, preferences, and academic background. It combines classical and neural retrieval methods with a transparent multi-signal re-ranking layer.
+            </p>
+            <p>
+              <strong>Stage 1 — Candidate Retrieval</strong>: Two retrieval backends are used in parallel. A <strong>TF-IDF</strong> retriever handles keyword-sensitive queries (specific programs, locations, rankings), while a <strong>sentence-transformer embedding</strong> retriever captures semantic similarity for more abstract or profile-based queries. Candidates from both backends are pooled and deduplicated.
+            </p>
+            <p>
+              <strong>Stage 2 — Re-Ranking</strong>: Retrieved candidates are scored using a <strong>multi-signal re-ranking layer</strong> that combines retrieval scores with structured signals — academic fit, program match, location preference, tuition bands, and ranking tiers. Weights are tunable per deployment context, making the re-ranking fully transparent and interpretable.
+            </p>
+            <p>
+              The system was benchmarked using <strong>Recall@K, MRR (Mean Reciprocal Rank), and nDCG@K</strong> across both retrieval backends and combined configurations to select the deployed setup. Results are served via a <strong>FastAPI</strong> endpoint that returns ranked lists with score breakdowns for each candidate.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-sidebar fade-up stagger-2">
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Stage 1 — Retrieval</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">TF-IDF (Scikit-learn)</div>
+              <div class="project-tech-item">Sentence Transformers</div>
+              <div class="project-tech-item">Candidate pooling &amp; dedup</div>
+            </div>
+          </div>
+
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Stage 2 — Re-Ranking</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">Multi-signal scoring</div>
+              <div class="project-tech-item">Structured feature signals</div>
+              <div class="project-tech-item">Tunable weights</div>
+            </div>
+          </div>
+
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Evaluation Metrics</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">Recall@K</div>
+              <div class="project-tech-item">MRR (Mean Reciprocal Rank)</div>
+              <div class="project-tech-item">nDCG@K</div>
+            </div>
+          </div>
+
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Serving</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">FastAPI REST endpoint</div>
+              <div class="project-tech-item">Ranked list + score breakdown</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVALUATION METRICS -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">Evaluation</div>
+      <h2 class="heading fade-up">Retrieval Benchmarks</h2>
+      <p class="text-muted fade-up stagger-1" style="margin-top: 12px; max-width: 560px;">Retrieval backends were benchmarked across three complementary IR metrics to select the deployed configuration.</p>
+
+      <div class="results-grid" style="margin-top: 40px;">
+        <div class="result-card fade-up stagger-1">
+          <div class="result-value gradient-text">Recall@K</div>
+          <div class="result-label">Coverage — fraction of relevant items in top-K results</div>
+        </div>
+        <div class="result-card fade-up stagger-2">
+          <div class="result-value gradient-text">MRR</div>
+          <div class="result-label">Mean Reciprocal Rank — first relevant result position quality</div>
+        </div>
+        <div class="result-card fade-up stagger-3">
+          <div class="result-value gradient-text">nDCG@K</div>
+          <div class="result-label">Normalized Discounted Cumulative Gain — ranked list quality</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="heading fade-up">Key Components</h2>
+
+      <div class="features-grid">
+        <div class="feature-card fade-up stagger-1">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="feature-title">TF-IDF Retrieval</div>
+          <div class="feature-text">Sparse keyword retrieval using TF-IDF (Scikit-learn) excels on exact-match and keyword-sensitive queries — program names, locations, rankings — where lexical overlap is the right signal.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-2">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="feature-title">Sentence-Transformer Embeddings</div>
+          <div class="feature-text">Dense semantic retrieval using sentence-transformer models captures latent similarity between user profiles and university descriptions — handling paraphrase, intent, and concept-level matching beyond keyword overlap.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-3">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </div>
+          <div class="feature-title">Multi-Signal Re-Ranking</div>
+          <div class="feature-text">A transparent scoring layer combines retrieval relevance scores with structured signals: academic profile fit, program offering match, location preference, tuition range, and global ranking tier — all with tunable weights.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-4">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <div class="feature-title">IR Metric Benchmarking</div>
+          <div class="feature-text">Systematic evaluation of TF-IDF-only, embedding-only, and combined retrieval configurations using Recall@K, MRR, and nDCG@K on a held-out query set to select the best deployed configuration.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-1">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="feature-title">Interpretable Results</div>
+          <div class="feature-text">API responses include per-candidate score breakdowns showing each signal's contribution to the final ranking, making recommendations explainable to end users rather than opaque black-box outputs.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-2">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </div>
+          <div class="feature-title">FastAPI Endpoint</div>
+          <div class="feature-text">Clean REST API that accepts user profile payloads, runs the two-stage retrieval and re-ranking pipeline, and returns a ranked list of university recommendations with score breakdowns and metadata.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">Visuals</div>
+      <h2 class="heading fade-up">Screenshots</h2>
+
+      <div class="screenshots-grid">
+        <div class="screenshot-item fade-up stagger-1">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <span class="ph-label">Recommendation Results Page</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Ranked university list with per-signal score breakdown</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-2">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+            <span class="ph-label">Metric Benchmark — Recall@K, MRR, nDCG@K</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Retrieval benchmark comparison across TF-IDF, embedding, and combined backends</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-3">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            <span class="ph-label">Embedding Space Visualization</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Sentence-transformer embedding space — university clusters</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-4">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span class="ph-label">FastAPI Swagger Docs</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">REST API documentation with request/response schema</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK TO PROJECTS -->
+  <section class="project-section">
+    <div class="container" style="text-align: center;">
+      <div class="text-muted body-sm" style="margin-bottom: 16px;">Back to Projects</div>
+      <h3 class="subheading" style="margin-bottom: 20px;">Explore all featured projects</h3>
+      <a href="../../#projects" class="btn btn-outline">All Projects →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 <span>Sudip Poudel</span>. Built with care.</p>
+        <div class="footer-links">
+          <a href="../../">Portfolio</a>
+          <a href="../../#projects">All Projects</a>
+          <a href="../../#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

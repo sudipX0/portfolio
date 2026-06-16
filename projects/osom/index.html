@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSOM-AI — Sudip Poudel</title>
+  <meta name="description" content="Conversational BI / NL2SQL Assistant — Natural-language-to-SQL over PostgreSQL with RAG-based schema retrieval and self-correcting SQL repair." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../../" class="nav-logo">
+        <span class="bracket">[</span>sudip.poudel<span class="bracket">]</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../#about">About</a>
+        <a href="../../#skills">Skills</a>
+        <a href="../../#experience">Experience</a>
+        <a href="../../#projects" class="active">Projects</a>
+        <a href="../../#education">Education</a>
+        <a href="../../#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="../../#about">About</a>
+    <a href="../../#skills">Skills</a>
+    <a href="../../#experience">Experience</a>
+    <a href="../../#projects">Projects</a>
+    <a href="../../#education">Education</a>
+    <a href="../../#contact">Contact</a>
+  </div>
+
+  <!-- PROJECT HERO -->
+  <section class="project-hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1" style="top: -80px; right: -60px; background: radial-gradient(circle, rgba(52,211,153,0.1), transparent 70%);"></div>
+      <div class="hero-orb hero-orb-2" style="bottom: -40px; left: -60px; opacity: 0.3;"></div>
+    </div>
+
+    <div class="container">
+      <div class="project-hero-content">
+        <a href="../../#projects" class="project-hero-back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Projects
+        </a>
+
+        <div class="section-label">Conversational BI</div>
+        <h1 class="display-sm project-title">OSOM-AI</h1>
+        <p class="project-subtitle">Natural-Language-to-SQL Business Intelligence Assistant</p>
+
+        <div class="project-meta">
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <strong>2026</strong>
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <strong>Production</strong>
+          </div>
+          <div class="project-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+            <strong>Technimus LLC</strong>
+          </div>
+        </div>
+
+        <div class="tag-group" style="margin-bottom: 32px;">
+          <span class="badge badge-emerald">PostgreSQL</span>
+          <span class="badge badge-emerald">Vanna.ai</span>
+          <span class="badge badge-emerald">ChromaDB</span>
+          <span class="badge">RAG</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">Python</span>
+          <span class="badge">LLM</span>
+        </div>
+
+        <div class="project-hero-actions">
+          <a href="../../#contact" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Discuss This Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE DIAGRAM -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">System Design</div>
+      <h2 class="heading fade-up">Architecture Overview</h2>
+      <p class="text-muted fade-up stagger-1" style="margin-top: 12px; margin-bottom: 0; max-width: 640px;">
+        NL2SQL pipeline with semantic schema retrieval (RAG), LLM intent routing, self-correcting SQL repair loop, and read-only safety validation.
+      </p>
+
+      <div class="architecture-diagram fade-up stagger-2">
+        <div class="img-placeholder" style="aspect-ratio: 16/9;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span class="ph-label">NL2SQL Pipeline Architecture Diagram</span>
+          <span class="ph-dims">1920 × 1080</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="project-section">
+    <div class="container">
+      <div class="project-overview-grid">
+        <div>
+          <div class="section-label">Overview</div>
+          <h2 class="heading fade-up" style="margin-bottom: 28px;">What It Does</h2>
+
+          <div class="project-description fade-up stagger-1">
+            <p>
+              OSOM-AI is a <strong>natural-language-to-SQL (NL2SQL) assistant</strong> that lets business users query a <strong>PostgreSQL</strong> database in plain English. It translates conversational questions into validated SQL queries, executes them safely, and returns structured results or visualizations — no SQL knowledge required.
+            </p>
+            <p>
+              At its core is a <strong>semantic modeling layer</strong> that describes the database schema — tables, columns, relationships, and business terminology — as semantically rich text chunks. These chunks are indexed in <strong>ChromaDB</strong> and retrieved at query time using <strong>Vanna.ai</strong>'s RAG framework, giving the LLM the precise schema context it needs to generate accurate SQL.
+            </p>
+            <p>
+              The system features <strong>LLM intent routing</strong> to distinguish between conversational messages, schema exploration queries, and SQL-generation requests. When generated SQL fails execution, a <strong>self-correcting repair loop</strong> feeds the error back to the LLM for iterative correction — typically resolving syntax and logic errors within 2-3 iterations.
+            </p>
+            <p>
+              A <strong>read-only query safety layer</strong> parses and validates every generated SQL statement before execution, blocking mutations (INSERT, UPDATE, DELETE, DROP) and enforcing row-limit guards. The whole system is exposed via a <strong>FastAPI</strong> REST endpoint with an <strong>automated accuracy evaluation harness</strong> that benchmarks NL→SQL correctness against a held-out question set.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-sidebar fade-up stagger-2">
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Retrieval (RAG)</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">Vanna.ai</div>
+              <div class="project-tech-item">ChromaDB</div>
+              <div class="project-tech-item">Schema chunk indexing</div>
+              <div class="project-tech-item">Semantic similarity search</div>
+            </div>
+          </div>
+
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">SQL Generation</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">LLM intent routing</div>
+              <div class="project-tech-item">Self-correcting repair loop</div>
+              <div class="project-tech-item">Read-only safety validation</div>
+            </div>
+          </div>
+
+          <div class="project-sidebar-card">
+            <div class="project-sidebar-title">Database & API</div>
+            <div class="project-tech-list">
+              <div class="project-tech-item">PostgreSQL</div>
+              <div class="project-tech-item">FastAPI</div>
+              <div class="project-tech-item">Accuracy eval harness</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="heading fade-up">Key Components</h2>
+
+      <div class="features-grid">
+        <div class="feature-card fade-up stagger-1">
+          <div class="feature-icon" style="background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.25); color: var(--emerald);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="feature-title">Semantic Modeling Layer</div>
+          <div class="feature-text">Database schema described as semantically enriched text chunks — tables, columns, foreign keys, and business glossary — giving the LLM ground-truth context instead of raw DDL noise.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-2">
+          <div class="feature-icon" style="background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.25); color: var(--emerald);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="feature-title">ChromaDB RAG Retrieval</div>
+          <div class="feature-text">Schema chunks are embedded and stored in ChromaDB. At query time, the most relevant schema context is retrieved via semantic similarity search and injected into the LLM prompt — ensuring precise, scoped SQL generation.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-3">
+          <div class="feature-icon" style="background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.25); color: var(--emerald);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="feature-title">LLM Intent Routing</div>
+          <div class="feature-text">A routing layer classifies each user message — conversational chitchat, schema exploration, or SQL-answerable query — and dispatches to the appropriate handler before any SQL generation is attempted.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-4">
+          <div class="feature-icon" style="background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.25); color: var(--emerald);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.33"/></svg>
+          </div>
+          <div class="feature-title">Self-Correcting SQL Repair</div>
+          <div class="feature-text">When generated SQL fails execution, the database error is fed back to the LLM with the original intent for iterative self-correction, typically resolving syntax and logic errors within 2-3 repair cycles.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-1">
+          <div class="feature-icon" style="background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.25); color: var(--emerald);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="feature-title">Read-Only Safety Validation</div>
+          <div class="feature-text">Every generated SQL statement is parsed and validated before execution. Mutation operations (INSERT, UPDATE, DELETE, DROP, TRUNCATE) are blocked; row-limit guards prevent accidental full-table scans.</div>
+        </div>
+
+        <div class="feature-card fade-up stagger-2">
+          <div class="feature-icon" style="background: rgba(52,211,153,0.1); border-color: rgba(52,211,153,0.25); color: var(--emerald);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+          </div>
+          <div class="feature-title">Automated Accuracy Harness</div>
+          <div class="feature-text">A held-out evaluation set of natural-language questions with expected SQL outputs benchmarks end-to-end NL→SQL accuracy, tracking exact-match and execution-equivalence scores across schema changes.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="project-section">
+    <div class="container">
+      <div class="section-label">Visuals</div>
+      <h2 class="heading fade-up">Screenshots</h2>
+
+      <div class="screenshots-grid">
+        <div class="screenshot-item fade-up stagger-1">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span class="ph-label">Chat Interface — Query &amp; Results</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Natural language query with generated SQL and result table</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-2">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            <span class="ph-label">Schema Explorer View</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Semantic model view of tables, columns and relationships</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-3">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.33"/></svg>
+            <span class="ph-label">SQL Repair Loop — Error Correction</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">Self-correcting repair: error message feeding back into LLM</div>
+        </div>
+
+        <div class="screenshot-item fade-up stagger-4">
+          <div class="img-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+            <span class="ph-label">Accuracy Evaluation Dashboard</span>
+            <span class="ph-dims">1920 × 1080</span>
+          </div>
+          <div class="screenshot-caption">NL2SQL accuracy benchmark results across test question set</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT PROJECT -->
+  <section class="project-section">
+    <div class="container" style="text-align: center;">
+      <div class="text-muted body-sm" style="margin-bottom: 16px;">Next Project</div>
+      <h3 class="subheading" style="margin-bottom: 20px;">University Recommender — Two-Stage Retrieval &amp; Re-Ranking</h3>
+      <a href="../recommender/" class="btn btn-outline">View Recommender →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 <span>Sudip Poudel</span>. Built with care.</p>
+        <div class="footer-links">
+          <a href="../../">Portfolio</a>
+          <a href="../../#projects">All Projects</a>
+          <a href="../../#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
