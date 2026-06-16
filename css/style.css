@@ -446,6 +446,39 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   gap: 8px;
 }
 
+/* Tech icon chips — used in skills section */
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px 5px 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-inv-1);
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+  cursor: default;
+}
+
+.skill-chip:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-inv-0);
+}
+
+.skill-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.skill-icon-si {
+  filter: brightness(0) invert(0.65);
+}
+
 /* ============================================================
    PLACEHOLDER IMAGES
    ============================================================ */
@@ -522,17 +555,20 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .hero-inner {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 55fr 45fr;
-  gap: 64px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-/* Left column */
 .hero-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .hero-eyebrow {
@@ -558,13 +594,14 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   width: 56px;
   height: 2px;
   background: var(--accent);
-  margin: 20px 0 24px;
+  margin: 20px auto 24px;
   border-radius: 2px;
 }
 
 .hero-role-wrap {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 24px;
   min-height: 36px;
@@ -611,6 +648,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .hero-actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
 }
@@ -619,7 +657,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-left: 4px;
 }
 
 .hero-link {
@@ -1055,6 +1092,45 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .exp-bullet strong { color: var(--text-1); font-weight: 600; }
+
+.exp-company-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exp-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.exp-photos {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.exp-photo {
+  height: 140px;
+  width: auto;
+  max-width: 240px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  object-fit: cover;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.exp-photo:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-md);
+}
 
 /* ============================================================
    PROJECTS  (light bg)
@@ -1665,8 +1741,6 @@ footer {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 48px; }
-  .hero-right { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .about-image-wrap { max-width: 400px; margin: 0 auto; order: 1; }
   .about-content { order: 2; }
@@ -1691,7 +1765,7 @@ footer {
   .screenshots-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
   .results-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .hero-actions { flex-direction: column; align-items: center; }
 }
 
 @media (max-width: 480px) {
@@ -1699,5 +1773,4 @@ footer {
   :root { --section-py: 48px; }
   .results-grid { grid-template-columns: 1fr; }
   .project-meta { flex-direction: column; gap: 12px; }
-  .hero-status { display: block; }
 }
